@@ -5,7 +5,7 @@ Hash tables are used to access large arrays quickly, hash tables are faster than
 
 hash tables work by makeing an empty array of a preditermind size and then as new data is inputted it uses the key for that data (think title or paragraph heading) and then running it through an algorithim or 'hashing function' to turn the key into a random address in the array. Once this is complete the hash table stores the data at the randomized address.
 
-![Ref img](https://github.com/jordan-huitema/SDV503-Week-12/ref.png)
+![Ref img](https://github.com/jordan-huitema/SDV503-Week-12/blob/d27b4a36e3892d845967d3f8e0c27f6caa4c67be/ref.png)
 
 To acccess data in a hash table you need the key, once the correct key is entered the table will run it through its hash function to produce the address and then output the data at the address in the hash array.
 
