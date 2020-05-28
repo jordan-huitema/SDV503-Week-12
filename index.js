@@ -120,10 +120,10 @@ console.log(studentsTwo.email())
 
 class Calc {
     add(a,b){
-        return a + b
+        return a+b
     }
     sub(a,b){
-        return a - b
+        return a-b
     }
     mul(a,b){
         return a*b
@@ -137,3 +137,50 @@ console.log(calc.add(10,5))
 console.log(calc.sub(10,5))
 console.log(calc.mul(10,5))
 console.log(calc.div(10,5))
+
+//stack
+//stack uses last in first out, push() and pop()
+//a stack never adds or removes form the front the an array it only does this at the end 
+//this prevents each index of the array needing to be re-indexed each time a new index is added
+
+let stackArr = [1,2,3]
+
+stackArr.push(4)            //add to end (index 3)
+console.log(stackArr)
+
+stackArr.pop()              //remove from end (index 3)
+console.log(stackArr)
+
+function factorial(x){
+    console.log("run")
+    if(x===0){
+        console.log("return")
+        return 1}
+    return x*factorial(x-1)
+}
+console.log(factorial(4))
+
+//web history example
+let webHistory = []
+webHistory.push("www.google.co.nz")
+console.log(webHistory)
+
+webHistory.push("www.MDN.com")
+console.log(webHistory)
+
+webHistory.push("www.gitbook.com")
+console.log(webHistory)
+
+//Queue
+//A que is simmilar to a stack, it uses first in first out, push() and shift()
+//data is always added to the end and retieived from the front
+//Queues are used when data needs to be used in order, eg first job gets done first, second second and ect
+
+let queueArr = [1,2,3]
+
+queueArr.push(4)            //adds to end (index 3)
+console.log(queueArr)
+
+queueArr.shift()            //remove from front (index 0)
+console.log(queueArr)
+
