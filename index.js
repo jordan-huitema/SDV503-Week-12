@@ -144,6 +144,7 @@ console.log(calc.div(10,5))
 //this prevents each index of the array needing to be re-indexed each time a new index is added
 
 let stackArr = [1,2,3]
+console.log(stackArr)
 
 stackArr.push(4)            //add to end (index 3)
 console.log(stackArr)
@@ -177,6 +178,7 @@ console.log(webHistory)
 //Queues are used when data needs to be used in order, eg first job gets done first, second second and ect
 
 let queueArr = [1,2,3]
+console.log(queueArr)
 
 queueArr.push(4)            //adds to end (index 3)
 console.log(queueArr)
@@ -184,3 +186,6 @@ console.log(queueArr)
 queueArr.shift()            //remove from front (index 0)
 console.log(queueArr)
 
+//Enqueue and Dequeue
+//enqueue: add the begingin of queue and remove form end
+//dequeue: add from end of queue and remove from start
